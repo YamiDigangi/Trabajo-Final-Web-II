@@ -1,16 +1,14 @@
 const { response } = require("express");
 
-const apiUrl ="https://restcountries.com/v3.1/all"
+const apiUrl = "https://restcountries.com/v3.1/all";
 
-async function getPreguntasCapital (){
+async function getPreguntasCapital() {
     try {
-         const repuesta = await fetch(apiUrl);
-         const capitales = await response.json();
+        const repuesta = await fetch(apiUrl);
+        const capitales = await repuesta.json(); // Cambiado de response.json() a repuesta.json()
 
-         console.log(capitales);
-
+        console.log(capitales);
     } catch (error) {
-         console.error(error);
-        
+        console.error(error);
     }
 }
