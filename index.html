@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumiendo API</title>
+    <title>Juego de Capitales</title>
+    <style>
+        /* Estilos en español */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6; /* Color pastel */
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f28ab2;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        #pregunta {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #b2d7e3;
+        }
+
+        #respuestaInput {
+            padding: 10px;
+            font-size: 1.2em;
+            width: 60%;
+            margin-bottom: 20px;
+            border: 2px solid #f2b3d9;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        #botonEnviar {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #a4e0c9;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #botonEnviar:hover {
+            background-color: #7ec2a3;
+        }
+
+        #timer {
+            font-size: 1.5em;
+            color: #f28ab2;
+        }
+    </style>
 </head>
 <body>
+    <h1>Juego de Capitales</h1>
+    <div id="pregunta"></div>
+    
+    <input type="text" id="respuestaInput" placeholder="Escribe tu respuesta" />
+    <button id="botonEnviar">Enviar Respuesta</button>
+
+    <div id="timer"></div>
+
     <script src="main.js"></script>
 </body>
 </html>
